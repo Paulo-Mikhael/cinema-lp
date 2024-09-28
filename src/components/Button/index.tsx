@@ -1,29 +1,36 @@
 import clsx from "clsx";
-import { ElementType, ReactNode } from "react";
+import type { ElementType, ReactNode } from "react";
 
-interface ButtonProps { 
-  icon?: ElementType, 
-  children?: ReactNode,
-  variant?: "white-full" | "white-outlined" | "black-full" | "black-outlined"
+interface ButtonProps {
+  icon?: ElementType;
+  children?: ReactNode;
+  variant?: "white-full" | "white-outlined" | "black-full" | "black-outlined";
+  big?: boolean;
 }
 
-export default function Button({ icon: Icon, children, variant = "white-full" }: ButtonProps) {
+export default function Button({
+  icon: Icon,
+  children,
+  variant = "white-full",
+}: ButtonProps) {
   return (
-    <button className={clsx(
-      "cursor-pointer rounded-full",
-      {
-        "bg-main-white p-2": variant === "white-full",
-        "bg-transparent p-2 border border-main-white": variant === "black-outlined",
-      }
-    )}>
+    <button
+      type="button"
+      className={clsx("cursor-pointer rounded-full flex gap-1 items-center", {
+        "bg-main-white": variant === "white-full",
+        "bg-transparent border border-main-white": variant === "black-outlined",
+        "p-2": !children,
+        "px-4 py-1": children,
+      })}
+    >
       {children}
       {Icon && (
-        <Icon className={clsx(
-          {
+        <Icon
+          className={clsx({
             "text-main-black size-6": variant === "white-full",
-            "text-main-white size-5": variant === "black-outlined"
-          }
-        )} />
+            "text-main-white size-5": variant === "black-outlined",
+          })}
+        />
       )}
     </button>
   );

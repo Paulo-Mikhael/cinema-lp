@@ -9,7 +9,7 @@ export default function Header() {
         <Projector className="text-main-red size-11" />
         NIGHTLY
       </p>
-      <nav className="tracking-[0.5rem] flex items-center">
+      <nav className="tracking-theme flex items-center">
         <p className="cursor-pointer">TOP CASTS</p>
         <span className="size-1 rounded-full bg-main-white mx-4" />
         <p className="cursor-pointer">PRODUCTION</p>

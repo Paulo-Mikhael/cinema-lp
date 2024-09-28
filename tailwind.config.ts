@@ -22,6 +22,18 @@ const config: Config = {
         impact: ["var(--impact)"],
         impacted: ["var(--impacted)"],
       },
+      letterSpacing: {
+        theme: "8px",
+      },
+      keyframes: {
+        carouselInfinite: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-102%)" },
+        },
+      },
+      animation: {
+        slide: "carouselInfinite 2s linear infinite",
+      },
     },
   },
   plugins: [],
