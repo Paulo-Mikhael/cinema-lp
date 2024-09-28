@@ -16,7 +16,7 @@ const impacted = localFont({
 const imprima = Imprima({
   weight: ["400"],
   subsets: ["latin"],
-  display: "swap"
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${impact.variable} ${impacted.variable} ${imprima.className} antialiased`}
+        className={`${impact.variable} ${impacted.variable} ${imprima.className} text-main-white antialiased`}
       >
         {children}
       </body>

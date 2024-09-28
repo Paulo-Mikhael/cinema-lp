@@ -16,7 +16,11 @@ const config: Config = {
           white: "#FFF",
           red: "#B12231",
           gray: "#151515",
-        }
+        },
+      },
+      fontFamily: {
+        impact: ["var(--impact)"],
+        impacted: ["var(--impacted)"],
       },
     },
   },

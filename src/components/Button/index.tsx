@@ -13,7 +13,7 @@ export default function Button({ icon: Icon, children, variant = "white-full" }:
       "cursor-pointer rounded-full",
       {
         "bg-main-white p-2": variant === "white-full",
-        "bg-main-black p-2 border border-main-white": variant === "black-outlined",
+        "bg-transparent p-2 border border-main-white": variant === "black-outlined",
       }
     )}>
       {children}
