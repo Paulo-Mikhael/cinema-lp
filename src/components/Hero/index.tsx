@@ -1,10 +1,10 @@
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 import Button from "../Button";
 import deadpoolImg from "../../app/assets/images/deadpool.png";
 import logoDrawImg from "../../app/assets/images/deadpool-logo-draw.png";
 import logoMetalImg from "../../app/assets/images/deadpool-logo-metal.png";
-import Image from "next/image";
-import LineCarousel from "../LineCarousel";
-import { ArrowUpRight } from "lucide-react";
+import { LineCarousel } from "../LineCarousel";
 
 export default function Hero() {
   const defaultStyle = "w-full px-7";
@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="bg-main-white w-4 h-24" />
           <div className="bg-main-white w-4 h-24" />
         </div>
-        <LineCarousel />
+        <LineCarousel.Left />
       </div>
       <article
         className={`${defaultStyle} absolute top-[800px] flex justify-between items-center`}
@@ -64,7 +64,7 @@ export default function Hero() {
             <Image
               className="rounded-full size-8"
               src={logoDrawImg}
-              alt="logo drawed"
+              alt="Drawed deadpool logo"
             />
             <p className="tracking-theme">DEADPOOL</p>
             <p className="tracking-theme">STORY</p>

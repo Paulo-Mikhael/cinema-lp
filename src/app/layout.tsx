@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Imprima } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const impact = localFont({
   src: "/assets/fonts/Impact.ttf",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body
         className={`${impact.variable} ${impacted.variable} ${imprima.className} text-main-white antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
