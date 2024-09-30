@@ -19,7 +19,7 @@ import Button from "../Button";
 
 export default function SectionOne() {
   return (
-    <section className="relative">
+    <section className="relative h-[150vh] border-b-4 border-main-red">
       <div className="overflow-hidden relative z-10 pt-20">
         <LineCarousel.Right />
         <div className="w-[110%] h-48 bg-main-gray -rotate-6 2xl:-rotate-3" />
@@ -121,7 +121,6 @@ export default function SectionOne() {
             className="w-full rounded-xl absolute z-10 rotate-[40deg]"
           />
         </div>
-        <div className="w-full h-40 bg-main-black absolute -bottom-28 -z-10 rounded-3xl border-y-[5px] border-main-red" />
       </div>
     </section>
   );
