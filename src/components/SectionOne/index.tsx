@@ -1,6 +1,10 @@
 import { LineCarousel } from "../LineCarousel";
 import logoDrawImg from "../../app/assets/images/deadpool-logo-draw.png";
 import marvelLogoImg from "../../app/assets/images/marvel-logo.png";
+import cardImg1 from "../../app/assets/images/card-img-1.png";
+import cardImg2 from "../../app/assets/images/card-img-2.png";
+import cardImg3 from "../../app/assets/images/card-img-3.png";
+import cardImg4 from "../../app/assets/images/card-img-4.png";
 import Image from "next/image";
 import {
   ArrowUpRight,
@@ -18,10 +22,10 @@ export default function SectionOne() {
     <section className="relative">
       <div className="overflow-hidden relative z-10 pt-20">
         <LineCarousel.Right />
-        <div className="w-[110%] h-48 bg-main-gray -rotate-6" />
+        <div className="w-[110%] h-48 bg-main-gray -rotate-6 2xl:-rotate-3" />
       </div>
-      <div className="w-full px-7 pt-28 h-screen bg-gradient-to-b from-main-gray to-main-black absolute top-52 z-20 flex flex-col justify-between">
-        <article className="flex justify-between items-center">
+      <div className="w-full h-screen px-7 pt-28 bg-gradient-to-b from-main-gray from-[10%] to-main-black absolute top-52 flex flex-col justify-between items-center">
+        <article className="w-full flex justify-between items-center">
           <span>
             <p className="tracking-theme flex items-center gap-3">
               <Image
@@ -62,7 +66,7 @@ export default function SectionOne() {
             </p>
           </span>
         </article>
-        <article className="flex justify-between">
+        <article className="w-full flex justify-between">
           <span>
             <Button variant="black-outlined">
               <p className="font-impact py-2 text-xl">02</p>
@@ -87,7 +91,7 @@ export default function SectionOne() {
             </div>
           </span>
         </article>
-        <article className="flex justify-between">
+        <article className="w-full flex justify-between">
           <div className="size-32 rounded-full bg-main-red flex flex-col items-center justify-center">
             <Play className="size-5" />
           </div>
@@ -95,6 +99,29 @@ export default function SectionOne() {
             <Play className="size-5 text-main-red" />
           </div>
         </article>
+        <div className="size-[200px] absolute bottom-0 flex justify-center items-center">
+          <Image
+            src={cardImg1}
+            alt="deadpool belt"
+            className="w-full rounded-xl absolute z-40 rotate-[10deg]"
+          />
+          <Image
+            src={cardImg2}
+            alt="deadpool and wolverine hands making a heart z-30 rotate-[20deg]"
+            className="w-full rounded-xl absolute"
+          />
+          <Image
+            src={cardImg3}
+            alt="wolverine poster"
+            className="w-full rounded-xl absolute z-20 rotate-[30deg]"
+          />
+          <Image
+            src={cardImg4}
+            alt="deadpool aiming a gun"
+            className="w-full rounded-xl absolute z-10 rotate-[40deg]"
+          />
+        </div>
+        <div className="w-full h-40 bg-main-black absolute -bottom-28 -z-10 rounded-3xl border-y-[5px] border-main-red" />
       </div>
     </section>
   );

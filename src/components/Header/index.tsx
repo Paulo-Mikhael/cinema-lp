@@ -3,7 +3,7 @@ import Button from "../Button";
 
 export default function Header() {
   return (
-    <header className="min-w-full fixed flex items-center justify-between px-7 pt-6 z-50">
+    <header className="min-w-full fixed flex items-center justify-between px-7 pt-6 z-50 backdrop-brightness-50">
       <p className="text-[40px] flex gap-1 items-center font-impact">
         CINE
         <Projector className="text-main-red size-11" />

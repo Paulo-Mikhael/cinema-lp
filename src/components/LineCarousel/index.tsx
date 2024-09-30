@@ -17,7 +17,7 @@ function LineCarouselLeft() {
             key={index}
             src={deadpoolEyesImg}
             alt="deadpool eyes"
-            className="size-10"
+            className="size-10 select-none"
           />
         ))}
       </div>
@@ -27,7 +27,7 @@ function LineCarouselLeft() {
             key={index}
             src={deadpoolEyesImg}
             alt="deadpool eyes"
-            className="size-10"
+            className="size-10 select-none"
           />
         ))}
       </div>
@@ -38,14 +38,14 @@ function LineCarouselRight() {
   const elements = Array.from({ length: 20 }); // Cria um array com 20 posições
 
   return (
-    <div className="bg-main-red w-full h-14 absolute -rotate-6 overflow-hidden flex gap-[40%] z-10">
+    <div className="bg-main-red w-full h-14 absolute -rotate-6 overflow-hidden flex gap-[40%] z-10 2xl:-rotate-3">
       <div className="animate-slide h-full flex gap-6 items-center w-full">
         {elements.map((_, index) => (
           <Image
             key={index}
             src={deadpoolEyesImg}
             alt="deadpool eyes"
-            className="size-10"
+            className="size-10 select-none"
           />
         ))}
       </div>
@@ -55,7 +55,7 @@ function LineCarouselRight() {
             key={index}
             src={deadpoolEyesImg}
             alt="deadpool eyes"
-            className="size-10"
+            className="size-10 select-none"
           />
         ))}
       </div>
