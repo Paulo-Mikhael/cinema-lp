@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import Button from "../Button";
-import deadpoolImg from "../../app/assets/images/deadpool.png";
 import logoDrawImg from "../../app/assets/images/deadpool-logo-draw.png";
 import logoMetalImg from "../../app/assets/images/deadpool-logo-metal.png";
 import { LineCarousel } from "../LineCarousel";
+import TagButtons from "../TagButtons";
+import ActorNames from "../ActorNames";
+import DeadpoolHero from "../DeadpoolHero";
 
 export default function Hero() {
   const defaultStyle = "w-full px-7";
@@ -14,34 +16,17 @@ export default function Hero() {
       <div
         className={`${defaultStyle} flex items-center justify-between absolute top-[160px]`}
       >
-        <div className="w-full flex gap-3">
-          <Button variant="black-outlined">ACTION</Button>
-          <Button variant="black-outlined">COMEDY</Button>
-          <Button variant="black-outlined">SCI-FI</Button>
-        </div>
-        <p className="font-impact text-nowrap">RELEASE IMAX 3, 2024</p>
+        <TagButtons />
       </div>
       <div
-        className={`${defaultStyle} absolute top-[260px] flex justify-between z-10 gap-52`}
+        className={`${defaultStyle} relative top-[260px] flex justify-between z-10 gap-52`}
       >
-        <div className="flex flex-grow justify-between">
-          <p className="font-impact text-3xl">RYAN REYNOLDS</p>
-          <p className="font-impact text-3xl">KARAN SONI</p>
-        </div>
-        <div className="flex flex-grow justify-between">
-          <p className="font-impact text-3xl">EMMA CORRIN</p>
-          <p className="font-impact text-3xl">HUGH JACKMAN</p>
-        </div>
+        <ActorNames />
       </div>
       <div
         className={`${defaultStyle} absolute top-[260px] flex justify-center z-10 gap-52`}
       >
-        <p className="font-impacted text-[300px]">DEADPOOL</p>
-        <Image
-          className="absolute top-24 w-[500px]"
-          src={deadpoolImg}
-          alt="deadpool image"
-        />
+        <DeadpoolHero />
       </div>
       <div className="w-full flex justify-center z-[1] overflow-hidden">
         <div className="bg-main-gray w-full h-[2px] absolute top-[230px]" />

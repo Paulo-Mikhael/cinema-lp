@@ -145,7 +145,7 @@ export default function SectionTwo() {
       </span>
       <div className="relative bottom-0 size-56">
         <Image
-          className="size-56 absolute bottom-0 left-56"
+          className="absolute bottom-0 left-56"
           src={deadpoolImg}
           alt="Deadpool making a heart with him hands"
         />
