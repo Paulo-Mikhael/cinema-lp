@@ -62,7 +62,7 @@ export default function SectionOne() {
             <p className="font-impacted text-xl w-56 flex flex-col gap-3 relative">
               HUGH JACKMAN SAID HE REALLY WAS DONE PLAYING THE CHARACTER OF
               LOGAN/ WOLVERINE AFTER 2017'S 'LOGAN'.
-              <ArrowUpRight className="size-8 text-main-red cursor-pointer absolute -bottom-1 right-5" />
+              <ArrowUpRight className="size-8 transition-all text-main-red hover:text-main-white cursor-pointer absolute -bottom-1 right-5" />
             </p>
           </span>
         </article>
