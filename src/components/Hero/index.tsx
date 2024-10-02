@@ -1,12 +1,10 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
-import Button from "../Button";
 import logoDrawImg from "../../app/assets/images/deadpool-logo-draw.png";
-import logoMetalImg from "../../app/assets/images/deadpool-logo-metal.png";
 import { LineCarousel } from "../LineCarousel";
 import TagButtons from "../TagButtons";
 import ActorNames from "../ActorNames";
 import DeadpoolHero from "../DeadpoolHero";
+import ActionButton from "../ActionButton";
 
 export default function Hero() {
   const defaultStyle = "w-full px-7";
@@ -51,24 +49,14 @@ export default function Hero() {
               src={logoDrawImg}
               alt="Drawed deadpool logo"
             />
-            <p className="tracking-theme">DEADPOOL</p>
-            <p className="tracking-theme">STORY</p>
+            <p className="tracking-theme">DEADPOOL STORY</p>
           </div>
           <h1 className="w-[330px] text-lg mt-3 ">
             PART A. Wolverine joins the "merc with a mouth" in the third
             installment of the Deadpool film franchise.
           </h1>
         </span>
-        <span className="flex items-center gap-16">
-          <Button variant="black-outlined" icon={ArrowUpRight}>
-            <p className="font-impacted text-3xl p-1">BOOK NOW</p>
-          </Button>
-          <Image
-            src={logoMetalImg}
-            alt="rusty deadpool logo"
-            className="size-32 rotate-[18deg]"
-          />
-        </span>
+        <ActionButton />
       </article>
     </div>
   );

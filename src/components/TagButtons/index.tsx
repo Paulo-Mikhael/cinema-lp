@@ -13,15 +13,19 @@ export default function TagButtons() {
   useEffect(() => {
     gsap.to(button1.current, {
       opacity: 1,
+      duration: 1,
     });
     gsap.to(button2.current, {
       opacity: 1,
+      duration: 1,
     });
     gsap.to(button3.current, {
       opacity: 1,
+      duration: 1,
     });
     gsap.to(text.current, {
       opacity: 1,
+      duration: 1,
     });
   }, []);
   return (

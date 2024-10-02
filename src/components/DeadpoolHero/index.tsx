@@ -13,10 +13,12 @@ export default function DeadpoolHero() {
     gsap.to(text.current, {
       opacity: 1,
       translateX: 0,
+      duration: 1,
     });
     gsap.to(img.current, {
       opacity: 1,
       top: "96px",
+      duration: 1,
     });
   }, []);
 

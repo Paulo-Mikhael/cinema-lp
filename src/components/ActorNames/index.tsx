@@ -14,21 +14,25 @@ export default function ActorNames() {
       opacity: 1,
       translateX: 0,
       skewX: 0,
+      duration: 1,
     });
     gsap.to(karan.current, {
       opacity: 1,
       translateX: 0,
       skewX: 0,
+      duration: 1,
     });
     gsap.to(emma.current, {
       opacity: 1,
       translateX: 0,
       skewX: 0,
+      duration: 1,
     });
     gsap.to(hugh.current, {
       opacity: 1,
       translateX: 0,
       skewX: 0,
+      duration: 1,
     });
   }, []);
 
